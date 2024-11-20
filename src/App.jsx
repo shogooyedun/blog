@@ -1,5 +1,5 @@
 import React from "react";
-import BlogPostList from "./components/BlogPostList";
+import BlogCard from "./components/BlogCard";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         <h1 className="text-2xl font-bold">Responsive Blog Post Cards</h1>
       </header>
       <main>
-        <BlogPostList />
+      <BlogCard/>
       </main>
     </div>
   );
