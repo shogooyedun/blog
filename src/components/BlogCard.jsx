@@ -85,13 +85,17 @@ const BlogCard = () => {
   }));
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 bg-white">
+      <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold text-center px-4 sm:px-8 pt-3 pb-5">
+        Check out our <span className="text-secondary">latest news</span>
+      </h1>
+
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {blogsWithImages.map((blog, index) => (
           <div
             key={blog.id}
             className={`border rounded-lg overflow-hidden shadow-lg bg-white ${
-              index > 0 ? "hidden lg:block" : "" 
+              index > 0 ? "hidden lg:block" : ""
               // Hide all except the first on mobile
             }`}
           >
